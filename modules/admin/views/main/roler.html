@@ -1,0 +1,151 @@
+	<div id="cc" class="easyui-layout" data-options="fit:'true'">
+
+		<div data-options="region:'east',split:true" title="设置菜单及权限"
+			style="width: 250px;">
+			<ul id="accessList" class="easyui-tree"
+				data-options="method:'get',animate:true,checkbox:true,toolbar:'#toolbar'"
+				url="{:U('Wkrj/Roler/readroleraccess')}">
+
+			</ul>
+			<script type="text/javascript">
+				function getChecked() {
+					var nodes = $('#tt').tree('getChecked');
+					var s = '';
+					for ( var i = 0; i < nodes.length; i++) {
+						if (s != '')
+							s += ',';
+						s += nodes[i].text;
+					}
+					alert(s);
+				}
+			</script>
+		</div>
+		<div data-options="region:'center',title:'用户组列表'">
+
+			<table id="dg1" class="easyui-datagrid"
+				data-options="fit:'true',singleSelect:true,pageNumber:'1',pageSize:'20',pagination:'true',toolbar:'#toolbar'
+		      ,pagination:'true',rownumbers:'true',fitColumns:'true'"
+				url="{:U('Wkrj/Roler/rolerList')}">
+				<thead>
+					<tr>
+						<th data-options="field:'ck',checkbox:true"></th>
+						<th field="rolerId" align="center" width="50">排序</th>
+						<th field="status" formatter="status" align="center" width="50">状态</th>
+						<th field="rolerName" align="center" width="50">角色名称</th>
+						<th field="menuList" align="center" width="150">菜单列表</th>
+						<th field="permissionList" align="center" width="150">权限列表</th>
+						<th field="remark" align="center" width="50">备注</th>
+					</tr>
+				</thead>
+			</table>
+			<div id="toolbar">
+				<a href="javascript:void(0)" class="easyui-linkbutton"
+					iconCls="icon-add" plain="true" onclick="newRoler()">添加用户组</a> <a
+					href="javascript:void(0)" class="easyui-linkbutton"
+					iconCls="icon-edit" plain="true" onclick="editRoler()">修改用户组</a> <a
+					href="javascript:void(0)" class="easyui-linkbutton"
+					iconCls="icon-remove" plain="true" onclick="destroyRoler()">删除用户组</a>
+				<a href="javascript:void(0)" class="easyui-linkbutton"
+					iconCls="icon-reload" plain="true" onclick="reloadRoler()">刷新用户组</a>
+				<label>角色名称:</label> <input name="queryRoler" id="queryRoler"
+					class="easyui-validatebox"> <a href="#"
+					onclick="searchRoler()" class="easyui-linkbutton"
+					iconCls="icon-search">查询</a> <a href="javascript:void(0)"
+					class="easyui-linkbutton" iconCls="icon-edit" plain="true"
+					onclick="setAccess()">设置用户组菜单权限</a>
+			</div>
+
+			<div id="dlg" class="easyui-dialog" modal="true"
+				style="width: 400px; height: 280px; padding: 10px 20px" closed="true" buttons="#dlg-buttons">
+				<form id="Roler" method="post" novalidate>
+					<div class="fitem">
+						<label align="right">用户组名称:</label> <input name="rolerName"
+							class="easyui-validatebox">
+					</div>
+					<div class="fitem">
+						<label align="right">排序:</label> <input
+							class="easyui-numberspinner" name="sortNo" style="width: 154px;"></input>
+					</div>
+					<div class="fitem">
+						<label align="right">状态:</label> <select class="easyui-combobox"
+							style="width: 154px;" data-options="panelHeight:'auto'"
+							name="status">
+							<option value="1">开启</option>
+							<option value="2">锁定</option>
+						</select>
+					</div>
+					<div class="fitem">
+						<label align="right">状备注:</label>
+						<textarea name="remark" style="height: 60px;"></textarea>
+					</div>
+				</form>
+
+			</div>
+			<div id="dlg-buttons">
+				<a href="javascript:void(0)" class="easyui-linkbutton"
+					iconCls="icon-ok" onclick="saveRoler()">保存</a> <a
+					href="javascript:void(0)" class="easyui-linkbutton"
+					iconCls="icon-cancel"
+					onclick="javascript:$('#dlg').dialog('close')">关闭</a>
+			</div>
+			<div id="dlg1" class="easyui-dialog" modal="true"
+				style="width: 400px; height: 280px; padding: 10px 20px"
+				closed="true" buttons="#dlg1-buttons">
+				<form id="Roler1" method="post" novalidate>
+					<div class="fitem" style="display: none;">
+						<label align="right">用户组id:</label> <input name="rolerId"
+							class="easyui-validatebox">
+					</div>
+					<div class="fitem">
+						<label align="right">用户组名称:</label> <input name="rolerName"
+							class="easyui-validatebox">
+					</div>
+					<div class="fitem">
+						<label align="right">排序:</label> <input
+							class="easyui-numberspinner" name="sortNo" style="width: 154px;"></input>
+					</div>
+					<div class="fitem">
+						<label align="right">状态:</label> <select class="easyui-combobox"
+							style="width: 154px;" data-options="panelHeight:'auto'"
+							name="status">
+							<option value="1">开启</option>
+							<option value="2">锁定</option>
+						</select>
+					</div>
+					<div class="fitem">
+						<label align="right">状备注:</label>
+						<textarea name="remark" style="height: 60px;"></textarea>
+					</div>
+				</form>
+
+			</div>
+			<div id="dlg1-buttons">
+				<a href="javascript:void(0)" class="easyui-linkbutton"
+					iconCls="icon-ok" onclick="editSaveRoler()">保存修改</a> <a
+					href="javascript:void(0)" class="easyui-linkbutton"
+					iconCls="icon-cancel"
+					onclick="javascript:$('#dlg1').dialog('close')">关闭</a>
+			</div>
+			<script type="text/javascript" src="__APP__/Admin/ijs/roler.js"></script>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+		function addPanel() {
+			var region = $('#region').val();
+			var options = {
+				region : region
+			};
+			if (region == 'north' || region == 'south') {
+				options.height = 50;
+			} else {
+				options.width = 100;
+				options.split = true;
+				options.title = $('#region option:selected').text();
+			}
+			$('#cc').layout('add', options);
+		}
+		function removePanel() {
+			$('#cc').layout('remove', $('#region').val());
+		}
+	</script>

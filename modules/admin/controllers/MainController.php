@@ -7,7 +7,7 @@ class MainController extends OverController{
         return $this->renderPartial('index',['user'=>$this->user]);
     }
     public function actionShop(){
-        echo 'shop';
+        return $this->renderPartial('shop.html');
     }
     public function actionType(){
         echo 'type';

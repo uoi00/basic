@@ -12,7 +12,7 @@ function editroot() {
 	}
 }
 function saveroot() {
-	$('#addrootForm').form( {
+	$('#addrootForm').form( 'submit',{
 		url : './index.php?r=admin/root/addroot',
 		success : function(result) {
 			var result = eval("(" + result + ")");

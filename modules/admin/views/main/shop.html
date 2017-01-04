@@ -1,0 +1,138 @@
+<style type="text/css">
+	<!--
+	.dlog form{
+		margin: 10px;
+	}
+	.dlog form div{
+		height: 35px;
+	}
+	.dlog form div label{
+		width: 100px;
+	}
+	-->
+</style>
+<div id="bb" class="easyui-layout" data-options="fit:'true'">
+	<div data-options="region:'center',title:'商品列表'">
+		<!--管理员列表-->
+		<table id="shopgrid" class="easyui-datagrid"  data-options="fit:'true',pageSize:'20',singleSelect:true,url:'<?=\yii\helpers\url::to(['shop/shoplist']);?>'"
+			   toolbar="#shoptoolbar" pagination="true" rownumbers="true" fitColumns="true">
+			<thead>
+				<tr>
+					<th data-options="field:'id',checkbox:true"></th>
+					<th align="center" data-options="field:'user'" width="50px">商品名称</th>
+					<th align="center" data-options="field:'type'" width="50px">商品类型</th>
+					<th align="center" data-options="field:'time'" width="50px">上架时间</th>
+					<th align="center" data-options="field:'price'" width="50px">商品价格</th>
+					<th align="center" data-options="field:'nums'" width="50px">商品数量</th>
+					<th align="center" data-options="field:'cont'" width="50px">商品详情</th>
+					<th align="center" data-options="field:'remark'" width="50px">商品附注</th>
+				</tr>
+			</thead>
+		</table>
+		<div id="shoptoolbar">
+			<a href="javascript:void(0)" class="easyui-linkbutton"
+				iconCls="icon-add" plain="true" onclick="newshop()">添加商品</a>
+			<a href="javascript:void(0)" class="easyui-linkbutton"
+				iconCls="icon-edit" plain="true" onclick="editshop()">修改商品</a>
+			<a href="javascript:void(0)" class="easyui-linkbutton"
+				iconCls="icon-remove" plain="true" onclick="destroyshop()">商品下架</a>
+			<a href="javascript:void(0)" class="easyui-linkbutton"
+				iconCls="icon-reload" plain="true" onclick="reload()">刷新列表</a>
+			<label>关键字:</label>
+			<input name="lastname" class="easyui-validatebox" id="queryshop">
+			<a href="javascript:void(0);" class="easyui-linkbutton" iconCls="icon-search"  onclick="searchshop()">查询</a>
+		</div>
+		<!--管理员列表-->
+	</div>
+</div>
+<!--添加窗口-->
+<div id="addshop" class="easyui-dialog dlog" style="width: 400px; height: 380px; padding: 10px 20px" data-options="buttons:'#addshop-buttons',closed:true">
+	<form id="addshopform" method="post" enctype="multipart/form-data" novalidate>
+		<div class="fitem">
+			<label align="right">商品名称:</label>
+			<input name="user" class="easyui-textbox" required="true">
+		</div>
+		<div class="fitem">
+			<label align="right">商品类型:</label>
+			<input id="ty" name="type" type="text" required="true" class="easyui-combobox" url="./index.php?r=admin/shop/shoptype" valueField="name" textField="name">
+		</div>
+		<div class="fitem">
+			<label id="yt" align="right">商品用途:</label>
+			<input name="yotu" type="text" class="easyui-combobox" required="true" url="./index.php?r=admin/shop/shopyotu" valueField="name" textField="name">
+		</div>
+		<div class="fitem">
+			<label id="bz" align="right">商品包装:</label>
+			<input name="baoz" type="text" class="easyui-combobox" required="true" url="./index.php?r=admin/shop/shopbaoz" valueField="name" textField="name">
+		</div>
+		<div class="fitem">
+			<label id="yz" align="right">商品颜色:</label>
+			<input name="color" type="text" class="easyui-combobox" required="true" url="./index.php?r=admin/shop/shopcolor" valueField="name" textField="name">
+		</div>
+		<div class="fitem">
+			<label align="right">商品价格:</label>
+			<input name="price" type="text" class="easyui-numberbox" required="true">
+		</div>
+		<div class="fitem">
+			<label align="right">商品数量:</label>
+			<input name="nums" type="text" class="easyui-numberbox" required="true">
+		</div>
+		<div class="fitem">
+			<label align="right">商品展示:</label>
+			<input name="img" type="text" class="easyui-filebox">
+		</div>
+		<div class="fitem">
+			<label align="right">商品详情:</label>
+			<input name="cont" type="text" class="easyui-textbox">
+		</div>
+		<div class="fitem">
+			<label align="right">附&nbsp;&nbsp;&nbsp;&nbsp;注:</label>
+			<input name="remark" type="text" class="easyui-textbox">
+		</div>
+	</form>
+</div>
+<div id="addshop-buttons">
+	<a href="javascript:void(0)" class="easyui-linkbutton"
+	   iconCls="icon-ok" onclick="saveshop()">保存</a>
+	<a href="javascript:void(0)" class="easyui-linkbutton"
+	   iconCls="icon-cancel" onclick="javascript:$('#addshop').dialog('close')">关闭</a>
+</div>
+<!--添加窗口-->
+<!--修改窗口-->
+<div id="editshop" class="easyui-dialog dlog" style="width: 400px; height: 380px; padding: 10px 20px"
+	 data-options="closed:true,buttons:'#editshop-buttons',modal:true">
+	<form id="editshopform" method="post" novalidate>
+		<div class="fitem" style="display: none;">
+			<label align="right">用户ID:</label>
+			<input name="id" id="id1" class="easyui-textbox" required="true">
+		</div>
+		<div class="fitem">
+			<label align="right">商品名称:</label>
+			<input name="user" id="user1" class="easyui-textbox" readonly="readonly" required="true">
+		</div>
+		<div>
+			<label align="right">商品价格:</label>
+			<input name="price" id="price1" type="number" class="easyui-numborbox" required="true">
+		</div>
+		<div>
+			<label align="right">商品数量:</label>
+			<input name="nums" id="nums1" type="number" class="easyui-numborbox" required="true">
+		</div>
+		<div>
+			<label align="right">商品内容:</label>
+			<input name="cont" id="cont1" type="text" class="easyui-textbox">
+		</div>
+		<div>
+			<label align="right">商品附注:</label>
+			<input name="remark" id="remark1" type="text" class="easyui-textbox">
+		</div>
+	</form>
+</div>
+<div id="editshop-buttons">
+	<a href="javascript:void(0)" class="easyui-linkbutton"
+	   iconCls="icon-ok" onclick="editsaveshop()">保存修改</a> <a
+		href="javascript:void(0)" class="easyui-linkbutton"
+		iconCls="icon-cancel" onclick="javascript:$('#editshop').dialog('close')">关闭</a>
+</div>
+<!--修改窗口-->
+<script type="text/javascript" src="./js/shop.js"></script>
+

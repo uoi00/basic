@@ -43,7 +43,7 @@
         <a href="<?=\yii\helpers\Url::to(['test/logout']);?>" style="position:absolute; right: 30px; top: 15px;" title="注销">
             <img src="./img/logout.png" style="height: 50px">
         </a>
-        <a href="<?=\yii\helpers\Url::to(['home/index/index']);?>" style="position:absolute; right: 95px; top: 15px;" title="主页">
+        <a href="./index.php?r=home/index/index" style="position:absolute; right: 95px; top: 15px;" title="主页">
             <img src="./img/home.png" style="height: 50px">
         </a>
     </div>

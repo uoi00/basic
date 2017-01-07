@@ -10,7 +10,7 @@ class MainController extends OverController{
         return $this->renderPartial('shop.html');
     }
     public function actionType(){
-        echo 'type';
+        return $this->renderPartial('type.html');
     }
     public function actionDoc(){
         echo 'doc';
@@ -19,9 +19,10 @@ class MainController extends OverController{
         echo 'speak';
     }
     public function actionUser(){
-        return $this->renderPartial('user.html');
+        echo 'user';
+//        return $this->renderPartial('root.html');
     }
     public function actionRoot(){
-        return $this->renderPartial('user.html');
+        return $this->renderPartial('root.html');
     }
 }

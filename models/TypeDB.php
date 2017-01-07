@@ -9,32 +9,24 @@ class TypeDB extends ActiveRecord{
     public static function tableName(){
         return '{{type}}';
     }
-    //查询/搜索管理员列表
-    public function typelist($list,$page,$demand=''){
-        if ($demand == ''){
-            $datas = $this::find()->select(['id','user','time']);
-        }else{
-            $datas = $this::find()->select(['id','user','time'])->where(['like','user',$demand]);
+    //查询列表
+    public function typelist($list,$page){
+        $cont = $this::find()->count();
+        $datas = $this::find()->select(['id','name','prt'])->where(['prt'=>'0'])->all();
+        foreach ($datas as $k=>$v){
+            $clds =  $this::find()->select(['id','name','prt'])->where(['prt'=>$v->attributes['id']])->all();
+            foreach ($clds as $k1=>$v1){
+                $clds[$k1] = $v1->attributes;
+            }
+            $datas[$k] = $v->attributes;
+            $datas[$k]['children'] = $clds;
         }
-        $pages = new Pagination(['totalCount' =>$datas->count(), 'pageSize' => $list]);
-        $model = $datas->offset($page-1)->limit($pages->limit)->all();
-        foreach ($model as $k=>$v){
-            $model[$k] = $v->attributes;
-        }
-        $mod = json_encode($model);
-        echo '{"total" : '.$datas->count().', "rows" : '.$mod.'}';
+        echo  json_encode(['total'=>$cont,'rows'=>$datas]);
     }
-    //添加管理员
+    //添加
     public function addtype($data){
-        if ($data['pwd'] != $data['pwds']){
-            exit('{"fruit":"false","msg":"密码不一致"}');
-        }
-        if ($this->sel($data['user'])){
-            exit('{"fruit":"false","msg":"用户已存在"}');
-        }
-        $this->user = $data['user'];
-        $this->pwd = md5($data['pwd']);
-        $this->time = date("Y-m-d h:i:s");
+        $this->name = $data['name'];
+        $this->prt = $data['prt'];
         if ($this->save()){
             echo '{"fruit":"true","msg":"添加成功"}';
         }else{
@@ -43,13 +35,13 @@ class TypeDB extends ActiveRecord{
     }
     //修改账号
     public function edittype($data){
-        if (md5($data['pwdo']) ==$this->sel($data['id'])->attributes['pwd'] ){
-            $rst = $this::findOne($data['id']);
-            $rst->pwd = md5($data['pwdn']);
-            $rst->save();
+        $rst = $this::findOne($data['id']);
+        $rst->name = $data['name'];
+        $rst->prt = $data['prt'];
+        if ($rst->save() ){
             echo '{"fruit":"true","msg":"修改成功"}';
         }else{
-            exit('{"fruit":"false","msg":"密码错误"}');
+            exit('{"fruit":"false","msg":"数据错误"}');
         }
     }
     //删除用户

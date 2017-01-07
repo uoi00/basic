@@ -1,0 +1,86 @@
+<style type="text/css">
+    <!--
+    .dlog form{
+        margin: 10px;
+    }
+    .dlog form div{
+        height: 35px;
+    }
+    .dlog form div label{
+        width: 100px;
+    }
+    -->
+</style>
+<div id="bb" class="easyui-layout" data-options="fit:'true'">
+    <div data-options="region:'center',title:'分类列表'">
+        <!--管理员列表-->
+        <table id="typegrid" class="easyui-treegrid" data-options="fit:'true',pageSize:'20',singleSelect:true,url:'<?=\yii\helpers\url::to(['type/typelist']);?>',idField:'id',treeField:'name'"
+               toolbar="#typetoolbar" pagination="true" rownumbers="true" fitColumns="true">
+            <thead>
+            <tr>
+                <th data-options="field:'id',checkbox:true"></th>
+                <th align="left" data-options="field:'name'" width="50px">名称</th>
+                <th align="center" data-options="field:'prt'" width="50px">所属类型</th>
+            </tr>
+            </thead>
+        </table>
+        <div id="typetoolbar">
+            <a href="javascript:void(0)" class="easyui-linkbutton"
+               iconCls="icon-add" plain="true" onclick="newtype()">添加分类</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton"
+               iconCls="icon-edit" plain="true" onclick="edittype()">修改分类</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton"
+               iconCls="icon-remove" plain="true" onclick="destroytype()">删除分类</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton"
+               iconCls="icon-reload" plain="true" onclick="reload()">刷新列表</a>
+        </div>
+        <!--管理员列表-->
+    </div>
+</div>
+<!--添加窗口-->
+<div id="addtype" class="easyui-dialog dlog" style="width: 400px; height: 380px; padding: 10px 20px" data-options="buttons:'#addtype-buttons',closed:true">
+    <form id="addtypeform" method="post" novalidate>
+        <div class="fitem">
+            <label align="right">所属分类:</label>
+            <input name="prt" class="easyui-combobox" required="true" editable="false" url="./index.php?r=admin/type/typeprt" valueField="id" textField="name">
+        </div>
+        <div class="fitem">
+            <label align="right">分类名称:</label>
+            <input name="name" type="text" class="easyui-textbox" required="true">
+        </div>
+    </form>
+</div>
+<div id="addtype-buttons">
+    <a href="javascript:void(0)" class="easyui-linkbutton"
+       iconCls="icon-ok" onclick="savetype()">保存</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton"
+       iconCls="icon-cancel" onclick="javascript:$('#addtype').dialog('close')">关闭</a>
+</div>
+<!--添加窗口-->
+<!--修改窗口-->
+<div id="edittype" class="easyui-dialog dlog" style="width: 400px; height: 380px; padding: 10px 20px"
+     data-options="closed:true,buttons:'#edittype-buttons',modal:true">
+    <form id="edittypeform" method="post" novalidate>
+        <div class="fitem" style="display: none;">
+            <label align="right">用户ID:</label>
+            <input name="id" id="id1" class="easyui-textbox" required="true">
+        </div>
+        <div class="fitem">
+            <label align="right">所属分类:</label>
+            <input name="prt" class="easyui-combobox" required="true" editable="false" url="./index.php?r=admin/type/typeprt" valueField="id" textField="name">
+        </div>
+        <div class="fitem">
+            <label align="right">分类名称:</label>
+            <input name="name" type="text" class="easyui-textbox" required="true">
+        </div>
+    </form>
+</div>
+<div id="edittype-buttons">
+    <a href="javascript:void(0)" class="easyui-linkbutton"
+       iconCls="icon-ok" onclick="editsavetype()">保存修改</a> <a
+        href="javascript:void(0)" class="easyui-linkbutton"
+        iconCls="icon-cancel" onclick="javascript:$('#edittype').dialog('close')">关闭</a>
+</div>
+<!--修改窗口-->
+<script type="text/javascript" src="./js/type.js"></script>
+

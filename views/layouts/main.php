@@ -1,133 +1,129 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-    <title>美丽花店</title>
-    <base href="<?=\yii\helpers\Url::base(true);?>/">
-    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
-    <script type="text/javascript" src="./public/jquery.min.js"></script>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        <!--
-        .li1{
-            margin-right: 30px;
-        }
-        .footer{
-            width: 100%;
-            margin-top: 20px;
-            position: absolute;
-            height: 50px;
-            font: 18px bold;
-            background-color: lightgray;
-            text-align: center;
-            bottom: 0%;
-        }
-        #main{
-            margin-top: 2px;
-        }
-        .bana{
-            float: left;
-            height: 100px;
-            margin-left: 13%;
-        }
-        .logo{
-            height: 100px;
-        }
-        
-        .search{
-            margin-top: 35px;
-            margin-left: 20px;
-            float: left;
-            height: 48px;
-            border: 1px black solid;
-            padding: 1px;
-        }
-        .con{
-            height: 40px;
-        }
-        .content{
-            border: none;
-            font-size: 24px;
-        }
-        .clear{
-            border: none;
-        }
-        .s_btn{
-            background-color: #00bbee;
-            height: 40px;
-            width: 60px;
-            border: none;
-        }
-        #dz1{
-            height: 50px;
-        }
-        -->
-    </style>
+<title>Home</title>
+    <base href="<?=yii\helpers\Url::base(true)?>/">
+<link href="./front/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
+<script src="./front/js/jquery-1.11.0.min.js"></script>
+<!--Custom-Theme-files-->
+<!--theme-style-->
+<link href="./front/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="各种美丽鲜花" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--start-menu-->
+<script src="./front/js/simpleCart.min.js"> </script>
+<link href="./front/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="./front/js/memenu.js"></script>
+<script>$(document).ready(function(){$(".memenu").memenu();});</script>	
+<!--dropdown-->
+<script src="./front/js/jquery.easydropdown.js"></script>
 </head>
-<body>
-    <nav class="navbar-default navbar-fixed-top navbar" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#navbar-collapse">
-                    <span class="sr-only">切换导航</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="<?=\yii\helpers\Url::to(['home/index/index'])?>">美丽花店</a>
-            </div>
-            <div class="navbar-nav navbar-right nav" id="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active li1"><a href="#">账号</a></li>
-                    <li class="li1"><a href="#">购物车</a></li>
-                    <li class="li1"><a href="#">我的订单</a></li>
-                    <li class="dropdown li1">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            客户服务 <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">配送范围</a></li>
-                            <li><a href="#">售后服务</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">留言反馈</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div style="height: 50px;width: 100%"></div>
-    <div id="main">
-        <div class="bana">
-            <img src="./img/logo.png" class="logo">
-        </div>
-        <div class="search" align="center">
-            <form action="<?=yii\helpers\Url::to(['home/index/search'])?>" method="post">
-                <span class="con">
-                    <input type="text" class="content" placeholder="请输入搜索内容">
-                    <button class="clear"><img src="./img/del.svg" style="height: 40px"></button>
-                </span>
-                <button class="s_btn">搜索</button>
-            </form>
-        </div>
-        <div style="height: 100px;width: 100%"></div>
-        <div>
-            <?=$content?>
-        </div>
-    </div>
-    <div id="dz1"></div>
-    <footer class="footer">
-        @所有权归 混·魂 所有
-    </footer>
+<body> 
+	<!--顶部-->
+	<div class="top-header">
+		<div class="container">
+			<div class="top-header-main">
+				<div class="col-md-6 top-header-left">
+					<div class="drop">
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<!-- 购物车 -->
+				<div class="col-md-6 top-header-left">
+					<div class="cart box_1">
+						<a href="./index.php?r=home/info/shopcar">
+							<img src="./front/images/cart-1.png" alt="" />
+						</a>
+						<p><a href="./index.php?r=home/info/shopcar" class="simpleCart_empty">购物车</a></p>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="box_1">
+						<span><br>我的订单</span>
+					</div>
+					<div class="box_1">
+						<span><br>
+                            <?php
+                                if($this->params['user']){
+                                    echo '<a href="./index.php?r=home/info/index">'.$this->params['user'].'</a>&nbsp;&nbsp;<a href="./index.php?r=home/index/tuichu">退出</a>';
+                                }else{
+                                    echo "<a href='./index.php?r=home/index/login'>登录</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='./index.php?r=home/index/register'>注册</a>";
+                                }
+                            ?>
+                        </span>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--顶部-->
+	<!--商店名称-->
+	<div class="logo">
+		<a href="<?yii\helpers\Url::to(['home/index/index']);?>"><h1>美丽花店</h1></a>
+	</div>
+	<!--商店名称-->
+	<!--菜单条目-->
+
+	<!--菜单条目-->
+    <?=$content;?>
+
+	<!--相关信息-->
+	<div class="information">
+		<div class="container">
+			<div class="infor-top">
+				<div class="col-md-3 infor-left">
+					<h3>关注我们</h3>
+					<ul>
+						<li><a href="http://www.facebook.com"><span class="fb"></span><h6>Facebook</h6></a></li>
+						<li><a href="http://www.twitter.com"><span class="twit"></span><h6>Twitter</h6></a></li>
+						<li><a href="http://www.google.cn"><span class="google"></span><h6>Google+</h6></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 infor-left">
+					<h3>相关消息</h3>
+					<ul>
+						<li><a><p>Specials</p></a></li>
+						<li><a><p>New Products</p></a></li>
+						<li><a><p>Our Stores</p></a></li>
+						<li><a><p>Contact Us</p></a></li>
+						<li><a><p>Top Sellers</p></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 infor-left">
+					<h3>我的账号</h3>
+					<ul>
+						<li><a href="./index.php?r=home/info/index"><p>我的账号</p></a></li>
+						<li><a href="./index.php?r=home/info/doc"><p>我的订单</p></a></li>
+						<li><a href="./index.php?r=home/info/info"><p>我的信息</p></a></li>
+						<li><a href="./index.php?r=home/info/shopcar"><p>我的购物车</p></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 infor-left">
+					<h3>联系方式</h3>
+					<h4>所有者,
+						<span>混·魂,</span>
+						北京市昌平区XXX区.</h4>
+					<h5>17090866372</h5>
+					<p>uoi00@qq.com</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--相关信息-->
+	<!--底部-->
+	<div class="footer">
+		<div class="container">
+			<div align="center" class="footer-top">
+				@ 所有权归 魂·魂 所有
+			</div>
+		</div>
+	</div>
+	<!--底部-->
 </body>
-<script type="text/javascript">
-    $('.content').on('keyup',function(){
-        $('.clear').show();
-    });
-    $('.clear').click(function(){
-        $('.content').val('');
-    });
-</script>
+<script type="text/javascript" src="./js/home.js"></script>
 </html>
-
-

@@ -9,7 +9,7 @@ class ShopDB extends ActiveRecord{
     public static function tableName(){
         return '{{shop}}';
     }
-    //查询/搜索管理员列表
+    //查询商品列表
     public function shoplist($list,$page,$demand=''){
         if ($demand == ''){
             $datas = $this::find();
@@ -24,7 +24,7 @@ class ShopDB extends ActiveRecord{
         $mod = json_encode($model);
         echo '{"total" : '.$datas->count().', "rows" : '.$mod.'}';
     }
-    //添加管理员
+    //添加商品
     public function addshop($data){
         $this->user = $data['user'];
         $this->time = date("Y-m-d h:i:s");
@@ -40,18 +40,20 @@ class ShopDB extends ActiveRecord{
             exit('{"fruit":"false","msg":"发生错误"}');
         }
     }
-    //修改账号
+    //修改商品
     public function editshop($data){
-        if (md5($data['pwdo']) ==$this->sel($data['id'])->attributes['pwd'] ){
-            $rst = $this::findOne($data['id']);
-            $rst->pwd = md5($data['pwdn']);
-            $rst->save();
-            echo '{"fruit":"true","msg":"修改成功"}';
+        $rst = $this::findOne($data['id']);
+        $rst->price = $data['price'];
+        $rst->nums = $data['nums'];
+        $rst->cont = $data['cont'];
+        $rst->remark = $data['remark'];
+        if ($rst->save()){
+            echo json_encode(['fruit'=>'true','msg'=>'修改成功']);
         }else{
-            exit('{"fruit":"false","msg":"密码错误"}');
+            echo json_encode(['fruit'=>'false','msg'=>'数据错误']);
         }
     }
-    //删除用户
+    //删除
     public function delshop($id){
         if($this::deleteAll(['id'=>$id])){
             echo '{"fruit":"true","msg":"删除成功"}';
@@ -59,18 +61,8 @@ class ShopDB extends ActiveRecord{
             exit('{"fruit":"false","msg":"数据错误"}');
         }
     }
-    //查找账号
+    //查找
     private function sel($user){
         return $this::find()->select('pwd')->where('id=:id',[':id'=>$user])->one();
-    }
-    //根据用户查找id
-    public function getId($user){
-        $rst = $this::find()->select('id')->where('user=:user',[':user'=>$user])->one();
-        return $rst->attributes['id'];
-    }
-    //根据id查找用户
-    public function getUser($id){
-        $rst = $this::find()->select('user')->where('user=:user',[':user'=>$id])->one();
-        return $rst->attributes['user'];
     }
 }

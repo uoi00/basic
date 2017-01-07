@@ -34,15 +34,12 @@ class ShopController extends Controller{
         $data['img'] = $path;
         $mod ->addshop($data);
     }
-    //修改商品
+    //修改
     public function actionEditshop(){
-//        var_dump(\Yii::$app->request->post());
-        echo json_encode(['fruit'=>'true','msg'=>'已接收信息']);
-        return ;
         $mod = new ShopDB();
         $mod ->editshop(\Yii::$app->request->post());
     }
-    //删除商品
+    //删除
     public function actionDelshop(){
         $mod = new shopDB();
         $s = \Yii::$app->request->post('ids');

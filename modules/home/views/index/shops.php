@@ -82,7 +82,7 @@
                             </p>
                             </div>
                             <a href="javascript:;" id="<?=$rst['id']?>" class="add-cart item_add" onclick="addcar(this)">添加购物车</a>
-                            <a href="javascript;" onclick="shoping(this)" class="add-cart item_add" id="<?=$rst['id']?>">现在购买</a>
+                            <a href="javascript:;" onclick="shoping(this)" class="add-cart item_add" id="<?=$rst['id']?>">现在购买</a>
                         </div>
                     </div>
                     <div class="clearfix"> </div>

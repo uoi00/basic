@@ -21,6 +21,12 @@ function addcar(id) {
         }
     });
 }
+//购买
+function shoping(th) {
+    var id = th['id'];
+    var su = $('#inp').val();
+    open("./index.php?r=home/index/shoped&id="+id+"&shu="+su);
+}
 function delcar(id) {
     $.post('./index.php?r=home/info/delcar',{id:id},function (msg) {
         if (msg == 'true'){
@@ -29,6 +35,9 @@ function delcar(id) {
             alert('取消失败');
         }
     });
+}
+function carshoping(id,su) {
+    open("./index.php?r=home/index/shoped&id="+id+"&shu="+su);
 }
 function looks(ids) {
     $.post('./index.php?r=home/index/shops',{id:ids});

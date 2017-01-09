@@ -9,6 +9,7 @@ use app\models\TypeDB;
 
 class IndexController extends OverController
 {
+    public $enableCsrfValidation = false;
 //    public $layout = 'dzf.php'; //布局页面
     public function init()
     {
@@ -127,5 +128,24 @@ class IndexController extends OverController
     public function actionShoping(){
         $id = \Yii::$app->request->get('ids');
         return $this->render('shoping',['data'=>$id]);
+    }
+    //确认购买
+    public function actionShoped(){
+        $r = \Yii::$app->request;
+        $shopid = $r->get('id');
+        $s = $r->get('shu');
+        $mod = new ShopDB();
+        $rst = $mod::findOne(['id'=>$shopid]);
+        return $this->render('shoped',['data'=>$rst->attributes,'shu'=>$s]);
+    }
+    public function actionPaytest(){
+        $order_id = '200000001' . time();
+        $gift_name = '元宝充值';
+        $money = 0.01;
+        $body = '元宝充值测试';
+        $show_url = 'https://openapi.alipay.com/gateway.do';
+        $alipay = new \app\yii2_alipay\AlipayPay();
+        $html = $alipay->requestPay($order_id, $gift_name, $money, $body, $show_url);
+        echo $html;
     }
 }

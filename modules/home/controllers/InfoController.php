@@ -31,7 +31,7 @@ class InfoController extends OverController{
     //购物车
     public function actionShopcar(){
         $id = \Yii::$app->session->get('users')['id'];
-        $sql = "select shop.img,shop.user,shop.price,shopcar.id,shopcar.shul
+        $sql = "select shop.img,shop.user,shop.price,shopcar.id,shopcar.shul,shopcar.sid
  from shop,shopcar where shopcar.uid=$id and shopcar.sid=shop.id;";
         $db = \Yii::$app->db;
         $command = $db->createCommand($sql);

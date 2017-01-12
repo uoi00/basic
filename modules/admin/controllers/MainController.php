@@ -13,7 +13,7 @@ class MainController extends OverController{
         return $this->renderPartial('type.html');
     }
     public function actionDoc(){
-        echo 'doc';
+        return $this->renderPartial('doc.html');
     }
     public function actionSpeak(){
         echo 'speak';

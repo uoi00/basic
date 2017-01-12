@@ -12,12 +12,16 @@ class UserDB extends ActiveRecord{
         return '{{user}}';
     }
 
-/*    public function getId($user){
+    public function getId($user){
         $rst = $this::find()->select('id')->where('user=:user',[':user'=>$user])->one();
-        return $rst->attributes['id'];
+        if ($rst) {
+            return $rst->attributes['id'];
+        }else{
+            return null;
+        }
     }
 
-    public function getUser($id){
+/*    public function getUser($id){
         $rst = $this::find()->select('user')->where('user=:user',[':user'=>$id])->one();
         return $rst->attributes['user'];
     }*/

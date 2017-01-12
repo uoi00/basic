@@ -46,7 +46,7 @@ AppAsset::register($this);
     </div>
     <div class="form-group" align="center">
         <a href="<?=\yii\helpers\Url::to(['register'])?>">注册账号</a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="<?=\yii\helpers\Url::to(['found'])?>">忘记密码</a>
+        <a href="<?=\yii\helpers\Url::to(['find'])?>">忘记密码</a>
     </div>
     <div class="form-group" align="center">
         <?=Html::submitButton("登陆",['class'=>'btn btn-info']);?>

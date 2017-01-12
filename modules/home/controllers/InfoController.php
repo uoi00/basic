@@ -4,6 +4,7 @@ use app\modules\home\controllers\OverController;
 use app\models\ShopDB;
 use app\models\TypeDB;
 use app\models\ShopcarDB;
+use app\models\DocDB;
 
 class InfoController extends OverController{
 
@@ -36,6 +37,25 @@ class InfoController extends OverController{
         $db = \Yii::$app->db;
         $command = $db->createCommand($sql);
         $rst = $command->queryAll();
+        if(\Yii::$app->request->isGet){ //确认数据上传方式是否为get
+            /*处理数据*/
+            $con = 0;
+            foreach ($rst as $v){
+                $con = $con + $v['shul']*$v['price'];
+            }
+            if ($con == \Yii::$app->request->get('pr')){  //校验数据的正确性
+                $data['names'] = \Yii::$app->request->get('names');
+                $data['addrs'] = \Yii::$app->request->get('addrs');
+                $data['tels'] = \Yii::$app->request->get('tel');
+                foreach ($rst as $v){
+                    $data['user'] = $v['user'];
+                    $data['shuls'] = $v['shul'];
+                    $mod = new DocDB();
+                    $mod->adddoc($data);  //生成订单
+                }
+            }
+            exit();
+        }
         return $this->render('shopcar',['data'=>$rst]);
     }
     //添加购物车

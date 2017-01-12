@@ -1,0 +1,75 @@
+<style type="text/css">
+    <!--
+    .dlog form{
+        margin: 10px;
+    }
+    .dlog form div{
+        height: 35px;
+    }
+    .dlog form div label{
+        width: 100px;
+    }
+    -->
+</style>
+<div id="bb" class="easyui-layout" data-options="fit:'true'">
+    <div data-options="region:'center',title:'商品列表'">
+        <!--管理员列表-->
+        <table id="docgrid" class="easyui-datagrid"  data-options="fit:'true',pageSize:'20',singleSelect:true,url:'<?=\yii\helpers\url::to(['doc/doclist']);?>'"
+               toolbar="#doctoolbar" pagination="true" rownumbers="true" fitColumns="true">
+            <thead>
+            <tr>
+                <th align="center" data-options="field:'id'" width="50px">订单号</th>
+                <th align="center" data-options="field:'user'" width="50px">购买人</th>
+                <th align="center" data-options="field:'name'" width="50px">收货人</th>
+                <th align="center" data-options="field:'addr'" width="50px">收货地址</th>
+                <th align="center" data-options="field:'tel'" width="50px">联系方式</th>
+                <th align="center" data-options="field:'res'" width="50px">购买商品</th>
+                <th align="center" data-options="field:'shu'" width="50px">购买数量</th>
+                <th align="center" data-options="field:'time'" width="50px">购买时间</th>
+                <th align="center" data-options="field:'status'" width="50px">订单状态</th>
+                <th align="center" data-options="field:'delivery'" width="50px">运单号</th>
+            </tr>
+            </thead>
+        </table>
+        <div id="doctoolbar">
+            <a href="javascript:void(0)" class="easyui-linkbutton"
+               iconCls="icon-add" plain="true" onclick="fahuo()">商品发货</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton"
+               iconCls="icon-reload" plain="true" onclick="reload()">刷新列表</a>
+            <label>未付款:</label><input name="aa" type="radio" onclick="status('1')">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>未发货:</label><input name="aa" type="radio" onclick="status('2')">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>未收货:</label><input name="aa" type="radio" onclick="status('3')">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>已完成:</label><input name="aa" type="radio" onclick="status('4')">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>订单号:</label>
+            <input name="lastname" class="easyui-validatebox" id="querydoc">
+            <a href="javascript:void(0);" class="easyui-linkbutton" iconCls="icon-search"  onclick="searchdoc()">查询</a>
+        </div>
+        <!--管理员列表-->
+    </div>
+</div>
+<!--修改窗口-->
+<div id="editdoc" class="easyui-dialog dlog" style="width: 400px; height: 380px; padding: 10px 20px"
+     data-options="closed:true,buttons:'#editdoc-buttons',modal:true">
+    <form id="editdocform" method="post" novalidate>
+        <div class="fitem">
+            <label align="right">订单号:</label>
+            <input name="id" readonly="readonly" id="id1" class="easyui-textbox" required="true">
+        </div>
+        <div class="fitem">
+            <label align="right">运单号:</label>
+            <input name="delivery" id="delivery1" class="easyui-textbox" readonly="readonly" required="true">
+        </div>
+        <div>
+            <label align="right">收货地址:</label>
+            <input name="addr" id="addr1" type="text" class="easyui-textbox" required="true">
+        </div>
+    </form>
+</div>
+<div id="editdoc-buttons">
+    <a href="javascript:void(0)" class="easyui-linkbutton"
+       iconCls="icon-ok" onclick="editsavedoc()">确认发货</a> <a
+        href="javascript:void(0)" class="easyui-linkbutton"
+        iconCls="icon-cancel" onclick="javascript:$('#editdoc').dialog('close')">关闭</a>
+</div>
+<!--修改窗口-->
+<script type="text/javascript" src="./js/doc.js"></script>

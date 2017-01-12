@@ -1,13 +1,10 @@
 $(function () {
-    $('#sub').click(keys());
+    $('#sub').click(function(){keys()});
 });
 //按关键字搜索
 function keys() {
     var key = $('#keywrd').val();
-}
-//按类型搜索
-function tytpe(typ) {
-
+    location.href = './index.php?r=home/index/key&key='+key;
 }
 //添加购物车
 function addcar(id) {

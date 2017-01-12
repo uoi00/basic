@@ -53,7 +53,7 @@
                 <ul class="easyui-tree" data-options="animate:true,lines:false,data:[{'text':'商品管理','value':'shop'},{'text':'分类管理','value':'type'},{'text':'订单管理','value':'doc'},{'text':'评论/留言','value':'speak'}]"></ul>
             </div>
             <div title="基础管理" data-options="iconCls:'{$menulist.iconCls}'" style="padding: 10px;">
-                <ul class="easyui-tree" data-options="animate:true,lines:false,data:[{'text':'用户管理','value':'user'},{'text':'管理员管理','value':'root'}]">
+                <ul class="easyui-tree" data-options="animate:true,lines:false,data:[{'text':'管理员管理','value':'root'}]">
                 </ul>
             </div>
         </div>

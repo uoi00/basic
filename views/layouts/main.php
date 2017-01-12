@@ -108,7 +108,7 @@
 						<span>混·魂,</span>
 						北京市昌平区XXX区.</h4>
 					<h5>17090866372</h5>
-					<p>uoi00@qq.com</p>
+					<a>uoi00@qq.com</a>
 				</div>
 				<div class="clearfix"></div>
 			</div>

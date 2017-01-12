@@ -61,6 +61,22 @@ class ShopDB extends ActiveRecord{
             exit('{"fruit":"false","msg":"数据错误"}');
         }
     }
+    //类型查找
+    public function type($t){
+        $rst = $this::find()->where(['like','type',$t])->all();
+        foreach ($rst as $k=>$v){
+            $rst[$k] = $v->attributes;
+        }
+        return $rst;
+    }
+    //关键字查找
+    public function key($key){
+        $datas = $this::find()->Where(['like','user',$key])->orWhere(['like','type',$key])->all();
+        foreach ($datas as $k=>$v){
+            $datas[$k] = $v->attributes;
+        }
+        return $datas;
+    }
     //查找
     private function sel($user){
         return $this::find()->select('pwd')->where('id=:id',[':id'=>$user])->one();

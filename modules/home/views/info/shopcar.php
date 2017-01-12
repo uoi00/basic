@@ -41,7 +41,8 @@
         <tr>
             <td align="center">商品</td>
             <td align="center">数量</td>
-            <td align="center">价格</td>
+            <td align="center">单价</td>
+            <td align="center">合计</td>
             <td align="center">操作</td>
         </tr>
         <?php
@@ -49,11 +50,24 @@
             echo '<tr>
     <td><div>'.$v['user'].'</div><img style="width: 100px" src="'.$v['img'].'"></td>
     <td align="center">'.$v['shul'].'</td>
+    <td align="center"> ￥ '.$v['price'].'</td>
     <td align="center"> ￥ '.$v['shul']*$v['price'].'</td>
     <td align="center"><a href="javascript:;" class="'.$v['id'].'" onclick="delcar('.$v['id'].')">取消</a>&nbsp;&nbsp;
     <a href="javascript:;" class="'.$v['id'].'" onclick="carshoping('.$v['sid'].','.$v['shul'].')">购买</a></td></tr>';
         }
         ?>
+        <tr>
+            <td align="center">收货地址：</td>
+            <td colspan="4"><input id="addr" name="addrs" class="form-control"></td>
+        </tr>
+        <tr>
+            <td align="center">收货人：</td>
+            <td colspan="4"><input id="name" name="names" class="form-control"></td>
+        </tr>
+        <tr>
+            <td align="center">联系电话：</td>
+            <td colspan="4"><input id="tel" name="tels" class="form-control"></td>
+        </tr>
         <tr>
             <td class="zongj" colspan="2" align="center">合计总价： ￥
                 <?php
@@ -64,9 +78,21 @@
                 echo $con;
                 ?>
             </td>
-            <td colspan="2">
-                <a class="btn doc" href="#">提交订单</a>
+            <td colspan="3">
+                <a class="btn doc" href="javascript:;">提交订单</a>
             </td>
         </tr>
     </table>
 </div>
+<script type="text/javascript">
+    $(function () {
+       $('.doc').click(function () {
+           var addrs = $('#addr').val();
+           var names = $('#name').val();
+           var tel = $('#tel').val();
+           if (addrs && names && tel) {
+               location.href = './index.php?r=home/info/shopcar&addrs=' + addrs + '&names=' + name + '&tel=' + tel + '&pr=<?=$con?>';
+           }
+       });
+    });
+</script>

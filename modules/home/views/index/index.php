@@ -6,7 +6,7 @@
                     <ul class="memenu skyblue">
                         <li class="active"><a href="<?yii\helpers\Url::to(['home/index/index']);?>">主页</a></li>
                         <li class="grid">
-                            <a href="#">花型</a>
+                            <a>花型</a>
                             <div class="mepanel">
                                 <div class="row">
                                     <div class="col1 me-one">
@@ -14,7 +14,7 @@
                                         <ul>
                                             <?php
                                                 foreach ($type as $v){
-                                                    echo "<li><a href='javascript:;' onclick='type($v[name])'>$v[name]</a></li>";
+                                                    echo "<li><a href='./index.php?r=home/index/type&id=$v[name]'>$v[name]</a></li>";
                                                 }
                                             ?>
                                         </ul>
@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="grid"><a href="#">颜色</a>
+                        <li class="grid"><a>颜色</a>
                             <div class="mepanel">
                                 <div class="row">
                                     <div class="col1 me-one">
@@ -30,7 +30,7 @@
                                         <ul>
                                             <?php
                                             foreach ($color as $v){
-                                                echo "<li><a href='javascript:;' onclick='type($v[name])'>$v[name]</a></li>";
+                                                echo "<li><a href='./index.php?r=home/index/type&id=$v[name]'>$v[name]</a></li>";
                                             }
                                             ?>
                                         </ul>
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="grid"><a href="#">装束</a>
+                        <li class="grid"><a>装束</a>
                             <div class="mepanel">
                                 <div class="row">
                                     <div class="col1 me-one">
@@ -46,7 +46,7 @@
                                         <ul>
                                             <?php
                                             foreach ($baoz as $v){
-                                                echo "<li><a href='javascript:;' onclick='type($v[name])'>$v[name]</a></li>";
+                                                echo "<li><a href='./index.php?r=home/index/type&id=$v[name]'>$v[name]</a></li>";
                                             }
                                             ?>
                                         </ul>
@@ -55,14 +55,14 @@
                             </div>
                         </li>
                         <li class="grid">
-                            <a href="#">场合</a>
+                            <a>场合</a>
                             <div class="mepanel">
                                 <div class="row">
                                     <div class="col1 me-one">
                                         <ul>
                                             <?php
                                             foreach ($yotu as $v){
-                                                echo "<li><a href='javascript:;' onclick='type($v[name])'>$v[name]</a></li>";
+                                                echo "<li><a href='./index.php?r=home/index/type&id=$v[name]'>$v[name]</a></li>";
                                             }
                                             ?>
                                         </ul>

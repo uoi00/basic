@@ -1,0 +1,79 @@
+<style type="text/css">
+    <!--
+    .dlog form{
+        margin: 10px;
+    }
+    .dlog form div{
+        height: 35px;
+    }
+    .dlog form div label{
+        width: 100px;
+    }
+    -->
+</style>
+<div id="bb" class="easyui-layout" data-options="fit:'true'">
+    <div data-options="region:'center',title:'留言列表'">
+        <!--管理员列表-->
+        <table id="speakgrid" class="easyui-datagrid"  data-options="fit:'true',pageSize:'20',singleSelect:true,url:'<?=\yii\helpers\url::to(['speak/speaklist']);?>'"
+               toolbar="#speaktoolbar" pagination="true" rownumbers="true" fitColumns="true">
+            <thead>
+            <tr>
+                <th data-options="field:'id',checkbox:true"></th>
+                <th align="center" data-options="field:'name'" width="50px">留言人</th>
+                <th align="center" data-options="field:'tel'" width="50px">联系方式</th>
+                <th align="center" data-options="field:'type'" width="50px">留言类型</th>
+                <th align="center" data-options="field:'time'" width="50px">留言时间</th>
+                <th align="center" data-options="field:'ishf'" width="50px">是否回复</th>
+                <th align="center" data-options="field:'cont'" width="50px">内容</th>
+            </tr>
+            </thead>
+        </table>
+        <div id="speaktoolbar">
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" class="easyui-linkbutton"
+               iconCls="icon-edit" plain="true" onclick="huifu1()">回复</a>
+            <label>咨询:</label><input name="aa" type="radio" onclick="types('1')">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>建议:</label><input name="aa" type="radio" onclick="types('2')">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>投诉:</label><input name="aa" type="radio" onclick="types('3')">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>其他:</label><input name="aa" type="radio" onclick="types('4')">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>已回复:</label><input name="aa" type="radio" onclick="types('5')">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>未回复:</label><input name="aa" type="radio" onclick="types('6')">&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="javascript:void(0)" class="easyui-linkbutton"
+               iconCls="icon-reload" plain="true" onclick="reload()">刷新列表</a>
+        </div>
+        <!--管理员列表-->
+    </div>
+</div>
+<!--修改窗口-->
+<div id="editspeak" class="easyui-dialog dlog" style="width: 400px; height: 380px; padding: 10px 20px"
+     data-options="closed:true,buttons:'#editspeak-buttons',modal:true">
+    <form id="editspeakform" method="post" novalidate>
+        <div class="fitem" style="display: none;">
+            <label align="right">用户ID:</label>
+            <input name="id" id="id1" class="easyui-textbox" required="true">
+        </div>
+        <div class="fitem">
+            <label align="right">回复人:</label>
+            <input name="names" class="easyui-textbox" required="true" value="掌柜">
+        </div>
+        <div class="fitem">
+            <label align="right">联系方式:</label>
+            <input name="tels" class="easyui-textbox" required="true" value="8888666">
+        </div>
+        <div class="fitem">
+            <label align="right">留言类型:</label>
+            <input name="types" class="easyui-textbox" required="true" value="回复">
+        </div>
+        <div class="fitem">
+            <label align="right">回复内容:</label><br>
+            <input name="content" class="easyui-textbox" required="true" data-options="multiline:true">
+        </div>
+    </form>
+</div>
+<div id="editspeak-buttons">
+    <a href="javascript:void(0)" class="easyui-linkbutton"
+       iconCls="icon-ok" onclick="editsavespeak()">保存修改</a> <a
+        href="javascript:void(0)" class="easyui-linkbutton"
+        iconCls="icon-cancel" onclick="javascript:$('#editspeak').dialog('close')">关闭</a>
+</div>
+<!--修改窗口-->
+<script type="text/javascript" src="./js/speak.js"></script>

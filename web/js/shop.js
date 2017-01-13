@@ -32,7 +32,7 @@ function editsaveshop() {
         success: function (result) {
             var result = eval("(" + result + ")");
             if (result.fruit == 'true') {
-                $('#addshop').dialog('close');
+                $('#editshop').dialog('close');
                 $.messager.alert('操作提示', result.msg);
                 $('#shopgrid').datagrid('reload');
             } else {
@@ -40,25 +40,6 @@ function editsaveshop() {
             }
         }
     });
-	/*var id = $('#id1').val();
-	var pwdo = $('#pwdold1').val();
-	var user = $('#user1').val();
-	var pwdn = $('#pwdnew1').val();
-	var pwds = $('#pwds1').val();
-	if (pwds == pwdn && pwdo.length >0){
-		$.post('./index.php?r=admin/shop/editshop',{id:id,pwdo:pwdo,user:user,pwdn:pwdn},function (result) {
-            var result = eval("(" + result + ")");
-            if (result.fruit == 'true') {
-                $('#addshop').dialog('close');
-                $.messager.alert('操作提示', result.msg);
-                $('#shopgrid').datagrid('reload');
-            } else {
-                $.messager.alert('操作提示', result.msg);
-            }
-        })
-	}else {
-		alert('数据错误，请检查');
-	}*/
 }
 function reload() {
 	$('#shopgrid').datagrid('reload', []);

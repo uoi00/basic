@@ -1,10 +1,9 @@
 <?php
 namespace app\modules\home\controllers;
 use app\modules\home\controllers\OverController;
-use app\models\ShopDB;
-use app\models\TypeDB;
 use app\models\ShopcarDB;
 use app\models\DocDB;
+use app\models\SpeakDB;
 
 class InfoController extends OverController{
 
@@ -18,12 +17,16 @@ class InfoController extends OverController{
             header('location:./index.php?r=home/index/login');
             exit();
         }
-//        exit();
     }
 
     //主页
     public function actionIndex(){
-        return $this->render('index');
+        $mod = new SpeakDB();
+        $data = $mod->idsel(\Yii::$app->session->get('users')['id']);
+        foreach ($data as $v){
+            $v['cont'] = htmlspecialchars_decode($v['cont']);
+        }
+        return $this->render('index',['data'=>$data]);
     }
     //个人信息
     public function actionInfo(){
@@ -37,7 +40,7 @@ class InfoController extends OverController{
         $db = \Yii::$app->db;
         $command = $db->createCommand($sql);
         $rst = $command->queryAll();
-        if(\Yii::$app->request->isGet){ //确认数据上传方式是否为get
+        if(\Yii::$app->request->get('pr')>0){ //确认数据上传方式是否为get
             /*处理数据*/
             $con = 0;
             foreach ($rst as $v){
@@ -53,7 +56,7 @@ class InfoController extends OverController{
                     $mod = new DocDB();
                     $mod->adddoc($data);  //生成订单
                 }
-                exit();
+                exit('1');
             }
         }
         return $this->render('shopcar',['data'=>$rst]);

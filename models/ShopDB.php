@@ -32,7 +32,7 @@ class ShopDB extends ActiveRecord{
         $this->img = $data['img'];
         $this->price = $data['price'];
         $this->nums = $data['nums'];
-        $this->cont = $data['cont'];
+        $this->cont = htmlspecialchars($data['cont']);
         $this->remark = $data['remark'];
         if ($this->save()){
             echo '{"fruit":"true","msg":"添加成功"}';

@@ -42,7 +42,7 @@
 						<div class="clearfix"> </div>
 					</div>
 					<div class="box_1">
-						<span><br>我的订单</span>
+						<span><br><a href="./index.php?r=home/info/doc">我的订单</a></span>
 					</div>
 					<div class="box_1">
 						<span><br>

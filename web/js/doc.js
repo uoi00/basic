@@ -13,7 +13,7 @@ function editsavedoc() {
         success: function (result) {
             var result = eval("(" + result + ")");
             if (result.fruit == 'true') {
-                $('#adddoc').dialog('close');
+                $('#editdoc').dialog('close');
                 $.messager.alert('操作提示', result.msg);
                 $('#docgrid').datagrid('reload');
             } else {

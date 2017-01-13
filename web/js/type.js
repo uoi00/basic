@@ -32,7 +32,7 @@ function editsavetype() {
         success: function (result) {
             var result = eval("(" + result + ")");
             if (result.fruit == 'true') {
-                $('#addtype').dialog('close');
+                $('#edittype').dialog('close');
                 $.messager.alert('操作提示', result.msg);
                 $('#typegrid').treegrid('reload');
             } else {

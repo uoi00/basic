@@ -70,7 +70,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="grid"><a href="contact.html">联系我们</a>
+                        <li class="grid"><a href="./index.php?r=home/speak/liuyan">联系我们</a>
                         </li>
                     </ul>
                 </div>

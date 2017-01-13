@@ -36,7 +36,7 @@ function editsaveroot() {
 		$.post('./index.php?r=admin/root/editroot',{id:id,pwdo:pwdo,user:user,pwdn:pwdn},function (result) {
             var result = eval("(" + result + ")");
             if (result.fruit == 'true') {
-                $('#addroot').dialog('close');
+                $('#editroot').dialog('close');
                 $.messager.alert('操作提示', result.msg);
                 $('#rootgrid').datagrid('reload');
             } else {

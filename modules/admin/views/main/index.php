@@ -50,7 +50,7 @@
     <div data-options="region:'west',split:true,title:'操作菜单'" title="East" style="width:300px;background-image: url('./img/lan2.png')">
         <div class="easyui-accordion" id="navtree" data-options="multiple:false,border:false,fit:true">
             <div title="基础管理" data-options="iconCls:'{$menulist.iconCls}'" style="padding: 10px;">
-                <ul class="easyui-tree" data-options="animate:true,lines:false,data:[{'text':'商品管理','value':'shop'},{'text':'分类管理','value':'type'},{'text':'订单管理','value':'doc'},{'text':'评论/留言','value':'speak'}]"></ul>
+                <ul class="easyui-tree" data-options="animate:true,lines:false,data:[{'text':'商品管理','value':'shop'},{'text':'分类管理','value':'type'},{'text':'订单管理','value':'doc'},{'text':'用户留言','value':'speak'}]"></ul>
             </div>
             <div title="基础管理" data-options="iconCls:'{$menulist.iconCls}'" style="padding: 10px;">
                 <ul class="easyui-tree" data-options="animate:true,lines:false,data:[{'text':'管理员管理','value':'root'}]">

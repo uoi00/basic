@@ -16,11 +16,7 @@ class MainController extends OverController{
         return $this->renderPartial('doc.html');
     }
     public function actionSpeak(){
-        echo 'speak';
-    }
-    public function actionUser(){
-        echo 'user';
-//        return $this->renderPartial('root.html');
+        return $this->renderPartial('speak.html');
     }
     public function actionRoot(){
         return $this->renderPartial('root.html');

@@ -53,8 +53,8 @@ class InfoController extends OverController{
                     $mod = new DocDB();
                     $mod->adddoc($data);  //生成订单
                 }
+                exit();
             }
-            exit();
         }
         return $this->render('shopcar',['data'=>$rst]);
     }

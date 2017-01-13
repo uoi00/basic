@@ -5697,3 +5697,1817 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1484227029.987
     'REQUEST_TIME' => 1484227029
 ]
+2017-01-13 15:10:48 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `shop` ORDER BY `time` DESC LIMIT 8
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:10:48 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `shop` ORDER BY `time` DESC LIMIT 8
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:10:48 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:10:48 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:10:48 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:10:48 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:10:48 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='1'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:10:48 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='1'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:10:48 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:10:48 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:10:48 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:10:48 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:10:48 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='28'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:77
+2017-01-13 15:10:48 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='28'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:77
+2017-01-13 15:10:48 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='2'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:78
+2017-01-13 15:10:48 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='2'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:78
+2017-01-13 15:10:48 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='3'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:79
+2017-01-13 15:10:48 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='3'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:79
+2017-01-13 15:10:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'home/index/index'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57353'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=home/index/index'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=home/index/index'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291447.323
+    'REQUEST_TIME' => 1484291447
+]
+2017-01-13 15:11:00 [::1][-][-][profile begin][yii\db\Command::query] SELECT `id`, `user`, `pwd` FROM `user` WHERE user='uoi00@qq.com'
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:91
+2017-01-13 15:11:00 [::1][-][-][profile end][yii\db\Command::query] SELECT `id`, `user`, `pwd` FROM `user` WHERE user='uoi00@qq.com'
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:91
+2017-01-13 15:11:00 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:91
+2017-01-13 15:11:00 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:91
+2017-01-13 15:11:00 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `user`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:91
+2017-01-13 15:11:01 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `user`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:91
+2017-01-13 15:10:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'home/index/login'
+]
+
+$_POST = [
+    '_csrf' => 'ZEZFSWFUbFpTEQg7IgskOQ8vCgECEBwzMSMJMDQiCzQ2Mj0OTB5eCg=='
+    'Login' => [
+        'user' => 'uoi00@qq.com'
+        'password' => 'qweqwe'
+        'verifyCode' => 'wubo'
+    ]
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/home/index/captcha' => 'nona'
+    '__captcha/home/index/captchacount' => 1
+    'users' => [
+        'id' => '1'
+        'user' => 'uoi00@qq.com'
+        'pwd' => 'efe6398127928f1b2e9ef3207fb82663'
+        'time' => null
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '151'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=home/index/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57396'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=home/index/login'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=home/index/login'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291459.879
+    'REQUEST_TIME' => 1484291459
+]
+2017-01-13 15:11:02 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `shop` ORDER BY `time` DESC LIMIT 8
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:11:02 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `shop` ORDER BY `time` DESC LIMIT 8
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:11:02 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:11:02 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:11:02 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:11:02 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:11:02 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='1'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:11:02 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='1'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:11:02 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:11:02 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:11:02 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:11:02 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:11:02 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='28'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:77
+2017-01-13 15:11:02 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='28'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:77
+2017-01-13 15:11:02 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='2'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:78
+2017-01-13 15:11:02 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='2'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:78
+2017-01-13 15:11:02 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='3'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:79
+2017-01-13 15:11:02 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='3'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:79
+2017-01-13 15:11:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'home/index/index'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/home/index/captcha' => 'nona'
+    '__captcha/home/index/captchacount' => 1
+    'users' => [
+        'id' => '1'
+        'user' => 'uoi00@qq.com'
+        'pwd' => 'efe6398127928f1b2e9ef3207fb82663'
+        'time' => null
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=home/index/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57396'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=home/index/index'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=home/index/index'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291461.043
+    'REQUEST_TIME' => 1484291461
+]
+2017-01-13 15:11:08 [::1][-][-][profile begin][yii\db\Command::query] select shop.img,shop.user,shop.price,shopcar.id,shopcar.shul,shopcar.sid
+ from shop,shopcar where shopcar.uid=1 and shopcar.sid=shop.id;
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\InfoController.php:39
+2017-01-13 15:11:08 [::1][-][-][profile end][yii\db\Command::query] select shop.img,shop.user,shop.price,shopcar.id,shopcar.shul,shopcar.sid
+ from shop,shopcar where shopcar.uid=1 and shopcar.sid=shop.id;
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\InfoController.php:39
+2017-01-13 15:11:07 [::1][-][-][info][application] $_GET = [
+    'r' => 'home/info/shopcar'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/home/index/captcha' => 'nona'
+    '__captcha/home/index/captchacount' => 1
+    'users' => [
+        'id' => '1'
+        'user' => 'uoi00@qq.com'
+        'pwd' => 'efe6398127928f1b2e9ef3207fb82663'
+        'time' => null
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=home/info/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57396'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=home/info/shopcar'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=home/info/shopcar'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291467.182
+    'REQUEST_TIME' => 1484291467
+]
+2017-01-13 15:12:33 [::1][-][-][profile begin][yii\db\Command::query] select shop.img,shop.user,shop.price,shopcar.id,shopcar.shul,shopcar.sid
+ from shop,shopcar where shopcar.uid=1 and shopcar.sid=shop.id;
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\InfoController.php:39
+2017-01-13 15:12:33 [::1][-][-][profile end][yii\db\Command::query] select shop.img,shop.user,shop.price,shopcar.id,shopcar.shul,shopcar.sid
+ from shop,shopcar where shopcar.uid=1 and shopcar.sid=shop.id;
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\InfoController.php:39
+2017-01-13 15:12:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'home/info/shopcar'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/home/index/captcha' => 'nona'
+    '__captcha/home/index/captchacount' => 1
+    'users' => [
+        'id' => '1'
+        'user' => 'uoi00@qq.com'
+        'pwd' => 'efe6398127928f1b2e9ef3207fb82663'
+        'time' => null
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=home/info/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57455'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=home/info/shopcar'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=home/info/shopcar'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291551.712
+    'REQUEST_TIME' => 1484291551
+]
+2017-01-13 15:12:59 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `shop` ORDER BY `time` DESC LIMIT 8
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:12:59 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `shop` ORDER BY `time` DESC LIMIT 8
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:12:59 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:12:59 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:12:59 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:12:59 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `shop`
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:70
+2017-01-13 15:12:59 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='1'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:12:59 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='1'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:12:59 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:12:59 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:12:59 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:12:59 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:76
+2017-01-13 15:12:59 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='28'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:77
+2017-01-13 15:12:59 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='28'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:77
+2017-01-13 15:12:59 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='2'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:78
+2017-01-13 15:12:59 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='2'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:78
+2017-01-13 15:12:59 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='3'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:79
+2017-01-13 15:12:59 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='3'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\IndexController.php:79
+2017-01-13 15:12:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'home/index/index'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/home/index/captcha' => 'nona'
+    '__captcha/home/index/captchacount' => 1
+    'users' => [
+        'id' => '1'
+        'user' => 'uoi00@qq.com'
+        'pwd' => 'efe6398127928f1b2e9ef3207fb82663'
+        'time' => null
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57509'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=home/index/index'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=home/index/index'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291578.611
+    'REQUEST_TIME' => 1484291578
+]
+2017-01-13 15:13:05 [::1][-][-][profile begin][yii\db\Command::query] select shop.img,shop.user,shop.price,shopcar.id,shopcar.shul,shopcar.sid
+ from shop,shopcar where shopcar.uid=1 and shopcar.sid=shop.id;
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\InfoController.php:39
+2017-01-13 15:13:05 [::1][-][-][profile end][yii\db\Command::query] select shop.img,shop.user,shop.price,shopcar.id,shopcar.shul,shopcar.sid
+ from shop,shopcar where shopcar.uid=1 and shopcar.sid=shop.id;
+    in E:\WAMP\www\LunWen\basic\modules\home\controllers\InfoController.php:39
+2017-01-13 15:13:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'home/info/shopcar'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/home/index/captcha' => 'nona'
+    '__captcha/home/index/captchacount' => 1
+    'users' => [
+        'id' => '1'
+        'user' => 'uoi00@qq.com'
+        'pwd' => 'efe6398127928f1b2e9ef3207fb82663'
+        'time' => null
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=home/info/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57538'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=home/info/shopcar'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=home/info/shopcar'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291583.966
+    'REQUEST_TIME' => 1484291583
+]
+2017-01-13 15:13:48 [::1][-][-][profile begin][yii\db\Command::query] SELECT `id`, `pwd`, `power`, `user` FROM `root` WHERE user='root'
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:48 [::1][-][-][profile end][yii\db\Command::query] SELECT `id`, `pwd`, `power`, `user` FROM `root` WHERE user='root'
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:48 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `root`
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:48 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `root`
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:48 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `root`
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:48 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `root`
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/test/login'
+]
+
+$_POST = [
+    'user' => 'root'
+    'pwd' => '123123'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/home/index/captcha' => 'nona'
+    '__captcha/home/index/captchacount' => 1
+    'users' => [
+        'id' => '1'
+        'user' => 'uoi00@qq.com'
+        'pwd' => 'efe6398127928f1b2e9ef3207fb82663'
+        'time' => null
+    ]
+    'user' => [
+        'id' => '1'
+        'user' => 'root'
+        'pwd' => '4297f44b13955235245b2497399d7a93'
+        'time' => null
+        'power' => '1'
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '20'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin/test'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57567'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Ftest%2Flogin'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin%2Ftest%2Flogin'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291627.535
+    'REQUEST_TIME' => 1484291627
+]
+2017-01-13 15:13:48 [::1][-][-][profile begin][yii\db\Command::query] SELECT `id`, `pwd`, `power`, `user` FROM `root` WHERE user='root'
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:48 [::1][-][-][profile end][yii\db\Command::query] SELECT `id`, `pwd`, `power`, `user` FROM `root` WHERE user='root'
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:48 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `root`
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:48 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `root`
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:48 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `root`
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:48 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `root`
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TestController.php:18
+2017-01-13 15:13:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/test/login'
+]
+
+$_POST = [
+    'user' => 'root'
+    'pwd' => '123123'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/home/index/captcha' => 'nona'
+    '__captcha/home/index/captchacount' => 1
+    'users' => [
+        'id' => '1'
+        'user' => 'uoi00@qq.com'
+        'pwd' => 'efe6398127928f1b2e9ef3207fb82663'
+        'time' => null
+    ]
+    'user' => [
+        'id' => '1'
+        'user' => 'root'
+        'pwd' => '4297f44b13955235245b2497399d7a93'
+        'time' => null
+        'power' => '1'
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '20'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin/test'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57569'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Ftest%2Flogin'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin%2Ftest%2Flogin'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291627.554
+    'REQUEST_TIME' => 1484291627
+]
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='1'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:51
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='1'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:51
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:51
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:51
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:51
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:51
+2017-01-13 15:13:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/shop/shoptype'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57569'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin/shop/shoptype'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin/shop/shoptype'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291632.794
+    'REQUEST_TIME' => 1484291632
+]
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='2'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:63
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='2'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:63
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:63
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:63
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:63
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:63
+2017-01-13 15:13:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/shop/shopyotu'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57571'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin/shop/shopyotu'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin/shop/shopyotu'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291632.806
+    'REQUEST_TIME' => 1484291632
+]
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='28'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:57
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='28'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:57
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:57
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:57
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:57
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:57
+2017-01-13 15:13:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/shop/shopcolor'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57567'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin/shop/shopcolor'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin/shop/shopcolor'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291632.867
+    'REQUEST_TIME' => 1484291632
+]
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='3'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:69
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='3'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:69
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:69
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:69
+2017-01-13 15:13:53 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:69
+2017-01-13 15:13:53 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:69
+2017-01-13 15:13:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/shop/shopbaoz'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57568'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin/shop/shopbaoz'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin/shop/shopbaoz'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291632.827
+    'REQUEST_TIME' => 1484291632
+]
+2017-01-13 15:13:54 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:13:54 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:13:54 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `shop` LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:13:54 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `shop` LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:13:54 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:13:54 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:13:54 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:13:54 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:13:54 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:13:54 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:13:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/shop/shoplist'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '20'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57570'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fshop%2Fshoplist'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin%2Fshop%2Fshoplist'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291633.056
+    'REQUEST_TIME' => 1484291633
+]
+2017-01-13 15:14:07 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `shop` WHERE (`user` LIKE '%白%') OR (`type` LIKE '%白%')
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:14:07 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `shop` WHERE (`user` LIKE '%白%') OR (`type` LIKE '%白%')
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:14:07 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `shop` WHERE (`user` LIKE '%白%') OR (`type` LIKE '%白%') LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:14:07 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `shop` WHERE (`user` LIKE '%白%') OR (`type` LIKE '%白%') LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:14:07 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:14:07 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:14:07 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:14:07 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `shop`
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:14:07 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `shop` WHERE (`user` LIKE '%白%') OR (`type` LIKE '%白%')
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:14:07 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `shop` WHERE (`user` LIKE '%白%') OR (`type` LIKE '%白%')
+    in E:\WAMP\www\LunWen\basic\models\ShopDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\ShopController.php:13
+2017-01-13 15:14:06 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/shop/shoplist'
+]
+
+$_POST = [
+    'shopname' => '白'
+    'page' => '1'
+    'rows' => '20'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '33'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57598'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fshop%2Fshoplist'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin%2Fshop%2Fshoplist'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291646.838
+    'REQUEST_TIME' => 1484291646
+]
+2017-01-13 15:14:10 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='0'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:10 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='0'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:10 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:11 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/type/typeprt'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57601'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin/type/typeprt'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin/type/typeprt'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291649.886
+    'REQUEST_TIME' => 1484291649
+]
+2017-01-13 15:14:10 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='0'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:10 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `type` WHERE `prt`='0'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:10 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:11 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:61
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:32
+2017-01-13 15:14:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/type/typeprt'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57598'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin/type/typeprt'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin/type/typeprt'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291649.867
+    'REQUEST_TIME' => 1484291649
+]
+2017-01-13 15:14:11 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:14
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:14
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile begin][yii\db\Command::query] SELECT `id`, `name`, `prt` FROM `type` WHERE `prt`='0'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:15
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SELECT `id`, `name`, `prt` FROM `type` WHERE `prt`='0'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:15
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:15
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:15
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:15
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `type`
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:15
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile begin][yii\db\Command::query] SELECT `id`, `name`, `prt` FROM `type` WHERE `prt`='1'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:17
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SELECT `id`, `name`, `prt` FROM `type` WHERE `prt`='1'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:17
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile begin][yii\db\Command::query] SELECT `id`, `name`, `prt` FROM `type` WHERE `prt`='2'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:17
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SELECT `id`, `name`, `prt` FROM `type` WHERE `prt`='2'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:17
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile begin][yii\db\Command::query] SELECT `id`, `name`, `prt` FROM `type` WHERE `prt`='3'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:17
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SELECT `id`, `name`, `prt` FROM `type` WHERE `prt`='3'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:17
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile begin][yii\db\Command::query] SELECT `id`, `name`, `prt` FROM `type` WHERE `prt`='28'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:17
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:11 [::1][-][-][profile end][yii\db\Command::query] SELECT `id`, `name`, `prt` FROM `type` WHERE `prt`='28'
+    in E:\WAMP\www\LunWen\basic\models\TypeDB.php:17
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\TypeController.php:11
+2017-01-13 15:14:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/type/typelist'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '20'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57604'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Ftype%2Ftypelist'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin%2Ftype%2Ftypelist'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291650.002
+    'REQUEST_TIME' => 1484291650
+]
+2017-01-13 15:14:18 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `doc` ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:18 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `doc` ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:18 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `doc` ORDER BY `time` DESC LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:18 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `doc` ORDER BY `time` DESC LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:18 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `doc`
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:18 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `doc`
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:18 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `doc`
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:18 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `doc`
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:18 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `doc` ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:18 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `doc` ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/doc/doclist'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '20'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57609'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fdoc%2Fdoclist'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin%2Fdoc%2Fdoclist'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291657.742
+    'REQUEST_TIME' => 1484291657
+]
+2017-01-13 15:14:29 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `root`
+    in E:\WAMP\www\LunWen\basic\models\RootDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\RootController.php:12
+2017-01-13 15:14:29 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `root`
+    in E:\WAMP\www\LunWen\basic\models\RootDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\RootController.php:12
+2017-01-13 15:14:29 [::1][-][-][profile begin][yii\db\Command::query] SELECT `id`, `user`, `time` FROM `root` LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\RootDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\RootController.php:12
+2017-01-13 15:14:29 [::1][-][-][profile end][yii\db\Command::query] SELECT `id`, `user`, `time` FROM `root` LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\RootDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\RootController.php:12
+2017-01-13 15:14:29 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `root`
+    in E:\WAMP\www\LunWen\basic\models\RootDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\RootController.php:12
+2017-01-13 15:14:29 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `root`
+    in E:\WAMP\www\LunWen\basic\models\RootDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\RootController.php:12
+2017-01-13 15:14:29 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `root`
+    in E:\WAMP\www\LunWen\basic\models\RootDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\RootController.php:12
+2017-01-13 15:14:29 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `root`
+    in E:\WAMP\www\LunWen\basic\models\RootDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\RootController.php:12
+2017-01-13 15:14:29 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `root`
+    in E:\WAMP\www\LunWen\basic\models\RootDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\RootController.php:12
+2017-01-13 15:14:29 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `root`
+    in E:\WAMP\www\LunWen\basic\models\RootDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\RootController.php:12
+2017-01-13 15:14:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/root/rootlist'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '20'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57612'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Froot%2Frootlist'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin%2Froot%2Frootlist'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291668.481
+    'REQUEST_TIME' => 1484291668
+]
+2017-01-13 15:14:34 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `doc` WHERE (`id` LIKE '%已付款，未发货%') OR (`status`='已付款，未发货') ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:34 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `doc` WHERE (`id` LIKE '%已付款，未发货%') OR (`status`='已付款，未发货') ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:34 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `doc` WHERE (`id` LIKE '%已付款，未发货%') OR (`status`='已付款，未发货') ORDER BY `time` DESC LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:34 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `doc` WHERE (`id` LIKE '%已付款，未发货%') OR (`status`='已付款，未发货') ORDER BY `time` DESC LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:34 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `doc` WHERE (`id` LIKE '%已付款，未发货%') OR (`status`='已付款，未发货') ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:34 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `doc` WHERE (`id` LIKE '%已付款，未发货%') OR (`status`='已付款，未发货') ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/doc/doclist'
+]
+
+$_POST = [
+    'docname' => '已付款，未发货'
+    'page' => '1'
+    'rows' => '20'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '86'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57612'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fdoc%2Fdoclist'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin%2Fdoc%2Fdoclist'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291673.146
+    'REQUEST_TIME' => 1484291673
+]
+2017-01-13 15:14:36 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `doc` WHERE (`id` LIKE '%已发货，请等待%') OR (`status`='已发货，请等待') ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:36 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `doc` WHERE (`id` LIKE '%已发货，请等待%') OR (`status`='已发货，请等待') ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:19
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:36 [::1][-][-][profile begin][yii\db\Command::query] SELECT * FROM `doc` WHERE (`id` LIKE '%已发货，请等待%') OR (`status`='已发货，请等待') ORDER BY `time` DESC LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:36 [::1][-][-][profile end][yii\db\Command::query] SELECT * FROM `doc` WHERE (`id` LIKE '%已发货，请等待%') OR (`status`='已发货，请等待') ORDER BY `time` DESC LIMIT 20
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:36 [::1][-][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `doc`
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:36 [::1][-][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `doc`
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:36 [::1][-][-][profile begin][yii\db\Command::query] SHOW CREATE TABLE `doc`
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:36 [::1][-][-][profile end][yii\db\Command::query] SHOW CREATE TABLE `doc`
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:20
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:36 [::1][-][-][profile begin][yii\db\Command::query] SELECT COUNT(*) FROM `doc` WHERE (`id` LIKE '%已发货，请等待%') OR (`status`='已发货，请等待') ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:36 [::1][-][-][profile end][yii\db\Command::query] SELECT COUNT(*) FROM `doc` WHERE (`id` LIKE '%已发货，请等待%') OR (`status`='已发货，请等待') ORDER BY `time` DESC
+    in E:\WAMP\www\LunWen\basic\models\DocDB.php:25
+    in E:\WAMP\www\LunWen\basic\modules\admin\controllers\DocController.php:12
+2017-01-13 15:14:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/doc/doclist'
+]
+
+$_POST = [
+    'docname' => '已发货，请等待'
+    'page' => '1'
+    'rows' => '20'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1481346883597'
+    'Phpstorm-aea9c871' => '76b113fa-fffc-4bae-adf7-3cd7d25ed584'
+    '_csrf' => 'bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P\";}'
+    'PHPSESSID' => 'c4pu96focai66ub374muk5e054'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '86'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2057.400 QQBrowser/9.5.10158.400'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/LunWen/basic/web/index.php?r=admin%2Fmain%2Fmain'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1481346883597; Phpstorm-aea9c871=76b113fa-fffc-4bae-adf7-3cd7d25ed584; _csrf=bb11e83794d620e4b29c42e38d663d1e7f892997b54e2d59921673a590d7ef5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227WMrC_HckiOHcDpiUeLyUvgnRtxG-J2P%22%3B%7D; PHPSESSID=c4pu96focai66ub374muk5e054'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;D:\\Program Files\\Java\\jdk1.8.0_05\\jre\\bin;D:\\Program Files\\Java\\jdk1.8.0_05\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;E:\\WAMP\\MySql\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win64) PHP/5.5.27'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WAMP/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/WAMP/www/LunWen/basic/web/index.php'
+    'REMOTE_PORT' => '57612'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fdoc%2Fdoclist'
+    'REQUEST_URI' => '/LunWen/basic/web/index.php?r=admin%2Fdoc%2Fdoclist'
+    'SCRIPT_NAME' => '/LunWen/basic/web/index.php'
+    'PHP_SELF' => '/LunWen/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484291675.809
+    'REQUEST_TIME' => 1484291675
+]

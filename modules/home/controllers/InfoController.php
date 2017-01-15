@@ -23,14 +23,10 @@ class InfoController extends OverController{
     public function actionIndex(){
         $mod = new SpeakDB();
         $data = $mod->idsel(\Yii::$app->session->get('users')['id']);
-        foreach ($data as $v){
-            $v['cont'] = htmlspecialchars_decode($v['cont']);
+        foreach ($data as $k=>$v){
+            $data[$k]['cont'] = htmlspecialchars_decode($v['cont']);
         }
         return $this->render('index',['data'=>$data]);
-    }
-    //个人信息
-    public function actionInfo(){
-
     }
     //购物车
     public function actionShopcar(){
@@ -40,25 +36,6 @@ class InfoController extends OverController{
         $db = \Yii::$app->db;
         $command = $db->createCommand($sql);
         $rst = $command->queryAll();
-        if(\Yii::$app->request->get('pr')>0){ //确认数据上传方式是否为get
-            /*处理数据*/
-            $con = 0;
-            foreach ($rst as $v){
-                $con = $con + $v['shul']*$v['price'];
-            }
-            if ($con == \Yii::$app->request->get('pr')){  //校验数据的正确性
-                $data['names'] = \Yii::$app->request->get('names');
-                $data['addrs'] = \Yii::$app->request->get('addrs');
-                $data['tels'] = \Yii::$app->request->get('tel');
-                foreach ($rst as $v){
-                    $data['user'] = $v['user'];
-                    $data['shuls'] = $v['shul'];
-                    $mod = new DocDB();
-                    $mod->adddoc($data);  //生成订单
-                }
-                exit('1');
-            }
-        }
         return $this->render('shopcar',['data'=>$rst]);
     }
     //添加购物车
@@ -101,6 +78,8 @@ class InfoController extends OverController{
     }
     //订单
     public function actionDoc(){
-
+        $mod = new DocDB();
+        $rst = $mod->usel(\Yii::$app->session->get('user')['id'],\Yii::$app->request->get('type'));
+        return $this->render('doclist' , ['data'=>$rst]);
     }
 }

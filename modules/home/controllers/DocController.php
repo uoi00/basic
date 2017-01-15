@@ -18,9 +18,28 @@ class DocController extends OverController
             exit();
         }
     }
+    //确认购买 生成订单
     public function actionShop(){
-        var_dump(\Yii::$app->request->post());
         $mod = new DocDB();
         $rst = $mod->adddoc(\Yii::$app->request->post());
+        if ($rst != null ){
+            return $this->render('doc',['data'=>$rst]);
+        }else{
+            return $this->render('doc',['data'=>null]);
+        }
+    }
+    //支付
+    public function actionZhifu(){
+        $mod = new DocDB();
+        if ($mod->editdoc(\Yii::$app->request->post('data'))){
+            echo 'true';
+        }else{
+            echo 'false';
+        }
+    }
+    //取消订单
+    public function actionDeldoc(){
+        $mod = new DocDB();
+        $mod->deldoc(\Yii::$app->request->post('id'));
     }
 }

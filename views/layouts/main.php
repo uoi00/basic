@@ -96,9 +96,8 @@
 				<div class="col-md-3 infor-left">
 					<h3>我的账号</h3>
 					<ul>
-						<li><a href="./index.php?r=home/info/index"><p>我的账号</p></a></li>
 						<li><a href="./index.php?r=home/info/doc"><p>我的订单</p></a></li>
-						<li><a href="./index.php?r=home/info/info"><p>我的信息</p></a></li>
+						<li><a href="./index.php?r=home/info/index"><p>我的留言</p></a></li>
 						<li><a href="./index.php?r=home/info/shopcar"><p>我的购物车</p></a></li>
 					</ul>
 				</div>

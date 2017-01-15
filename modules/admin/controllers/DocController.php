@@ -4,7 +4,7 @@ use yii\web\Controller;
 use app\models\DocDB;
 class DocController extends Controller{
     public $enableCsrfValidation = false;
-    //查询管理列表
+    //查询列表
     public function actionDoclist(){
         $mod = new DocDB();
         $r = \Yii::$app->request;

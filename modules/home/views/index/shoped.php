@@ -48,7 +48,7 @@
     <td align="center">'.$data['type'].'</td>
     <td align="center"> ￥'.$data['price'].'</td>
     <td align="center"><input readonly="readonly" class="sls" name="shuls" value="'.$shu.'"></td>
-    <td align="center"> ￥'.$shu*$data['price'].'</td></tr>';
+    <td align="center"> ￥<input name="money" readonly="readonly" class="sls" value="'.$shu*$data['price'].'"></td></tr>';
             ?>
             <tr>
                 <td colspan="5">

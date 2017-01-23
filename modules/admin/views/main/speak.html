@@ -14,7 +14,7 @@
 <div id="bb" class="easyui-layout" data-options="fit:'true'">
     <div data-options="region:'center',title:'留言列表'">
         <!--管理员列表-->
-        <table id="speakgrid" class="easyui-datagrid"  data-options="fit:'true',pageSize:'20',singleSelect:true,url:'<?=\yii\helpers\url::to(['speak/speaklist']);?>'"
+        <table id="speakgrid" class="easyui-datagrid"  data-options="fit:'true',pageSize:'20',singleSelect:true,url:'./index.php?r=admin/speak/speaklist'"
                toolbar="#speaktoolbar" pagination="true" rownumbers="true" fitColumns="true">
             <thead>
             <tr>

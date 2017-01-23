@@ -14,7 +14,7 @@
 <div id="bb" class="easyui-layout" data-options="fit:'true'">
     <div data-options="region:'center',title:'分类列表'">
         <!--管理员列表-->
-        <table id="typegrid" class="easyui-treegrid" data-options="fit:'true',pageSize:'20',singleSelect:true,url:'<?=\yii\helpers\url::to(['type/typelist']);?>',idField:'id',treeField:'name'"
+        <table id="typegrid" class="easyui-treegrid" data-options="fit:'true',pageSize:'20',singleSelect:true,url:'./index.php?r=admin/type/typelist',idField:'id',treeField:'name'"
                toolbar="#typetoolbar" pagination="true" rownumbers="true" fitColumns="true">
             <thead>
             <tr>

@@ -79,7 +79,7 @@ class InfoController extends OverController{
     //订单
     public function actionDoc(){
         $mod = new DocDB();
-        $rst = $mod->usel(\Yii::$app->session->get('user')['id'],\Yii::$app->request->get('type'));
+        $rst = $mod->usel(\Yii::$app->session->get('users')['id'],\Yii::$app->request->get('type'));
         return $this->render('doclist' , ['data'=>$rst]);
     }
 }

@@ -38,7 +38,7 @@ class DocDB extends ActiveRecord{
             $this->money = htmlspecialchars($data['money']);
             $this->time = date("Y-m-d H:i:s");
             if ($this->save()) {
-                return ['id'=>$id , 'name' => $data['names']];
+                return ['id'=>$id , 'name' => $data['names'] ,'res'=>$data['user']];
             } else {
                 return null;
             }

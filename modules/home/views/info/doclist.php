@@ -69,8 +69,12 @@
             echo '<a class="btn btn-danger btn-block deldoc" id="'.$v['id'].'">取消订单</a>';
             echo '<a class="btn btn-info btn-block zhifu" id="'.$v['id'].'">去付款</a>';
         }
+        if($v['status'] == '已付款，未发货'){
+            echo '<a class="btn btn-danger btn-block deldoc" id="'.$v['id'].'">取消订单</a>';
+        }
         if ($v['status'] == '已发货，请等待'){
             echo '<div>运单号：'.$v['delivery'].'</div>';
+            echo '<a class="btn btn-info btn-block shouhuo" id="'.$v['id'].'">我要收货</a>';
         }
         echo '</div>';
     }
@@ -92,6 +96,16 @@
            $.post('./index.php?r=home/doc/zhifu',{data:this.id},function (msg) {
                 if (msg == 'true') {
                     alert('支付成功！');
+                    location.href = './index.php?r=home/info/doc';
+                }else {
+                    alert('发生错误');
+                }
+            });
+        });
+        $('.shouhuo').click(function () {
+            $.post('./index.php?r=home/doc/shouhuo',{data:this.id},function (msg) {
+                if (msg == 'true') {
+                    alert('交易完成！');
                     location.href = './index.php?r=home/info/doc';
                 }else {
                     alert('发生错误');

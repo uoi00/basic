@@ -26,30 +26,48 @@ class DocDB extends ActiveRecord{
     }
     //添加
     public function adddoc($data){
-        if ($data['addrs']&&$data['names']&&$data['tels']) {
-            $id = '36' . date('dym') . substr(time(),-4,2) . rand(0, 99);
-            $this->id = $id;
-            $this->addr = htmlspecialchars($data['addrs']);
-            $this->name = htmlspecialchars($data['names']);
-            $this->tel = htmlspecialchars($data['tels']);
-            $this->res = htmlspecialchars($data['user']);
-            $this->shu = htmlspecialchars($data['shuls']);
-            $this->user = \Yii::$app->session->get('users')['id'];
-            $this->money = htmlspecialchars($data['money']);
-            $this->time = date("Y-m-d H:i:s");
-            if ($this->save()) {
-                return ['id'=>$id , 'name' => $data['names'] ,'res'=>$data['user']];
-            } else {
-                return null;
-            }
+        $id = '36' . date('dym') . substr(time(),-4,2) . rand(0, 99);
+        $this->id = $id;
+        $this->addr = htmlspecialchars($data['addrs']);
+        $this->name = htmlspecialchars($data['names']);
+        $this->tel = htmlspecialchars($data['tels']);
+        $this->res = htmlspecialchars($data['user']);
+        $this->shu = htmlspecialchars($data['shuls']);
+        $this->user = \Yii::$app->session->get('users')['id'];
+        $this->money = htmlspecialchars($data['money']);
+        $this->time = date("Y-m-d H:i:s");
+        if ($this->save()) {
+            return ['id'=>$id , 'name' => $data['names'] ,'res'=>$data['user']];
+        } else {
+            return null;
+        }
+    }
+    //付款
+    public function editdoc($data){
+        $rst = $this::findOne($data);
+        $rst->status = '已付款，未发货';
+        if ($rst->save()){
+            return true;
         }else{
             return false;
         }
     }
-    //修改
-    public function editdoc($data){
+    //发货
+    public function fahuo($data){
+        $rst = $this::findOne($data['id']);
+        $rst->status = '已发货，请等待';
+        $rst->delivery = $data['delivery'];
+        $rst->addr = htmlspecialchars($data['addr']);
+        if ($rst->save()){
+            echo json_encode(array('fruit'=>'true','msg'=>'已发货'));
+        }else{
+            echo json_encode(array('fruit'=>'false','msg'=>'系统错误'));
+        }
+    }
+    //收货
+    public function shouhuo($data){
         $rst = $this::findOne($data);
-        $rst->status = '已付款，未发货';
+        $rst->status = '已收货，交易完成';
         if ($rst->save()){
             return true;
         }else{
@@ -67,9 +85,9 @@ class DocDB extends ActiveRecord{
     //用户查找
     public function usel($user,$type=''){
         if ($type){
-            $rst = $this::find()->where(['user'=>$user])->andWhere(['status'=>$type])->all();
+            $rst = $this::find()->where(['user'=>$user])->andWhere(['status'=>$type])->orderBy('time desc')->all();
         }else{
-            $rst = $this::find()->where(['user'=>$user])->all();
+            $rst = $this::find()->where(['user'=>$user])->orderBy('time desc')->all();
         }
         if ($rst){
             foreach ($rst as $k=>$v){

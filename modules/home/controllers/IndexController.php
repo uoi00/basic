@@ -1,6 +1,7 @@
 <?php
 
 namespace app\modules\home\controllers;
+use app\models\ShopcarDB;
 use app\models\UserDB;
 use app\modules\home\controllers\OverController;
 use yii\filters\AccessControl;
@@ -166,6 +167,41 @@ class IndexController extends OverController
         $mod = new ShopDB();
         $rst = $mod::findOne($id);
         return $this->render('shops',['rst'=>$rst]);
+    }
+    //在购物车购买
+    public function actionCarshop(){
+        $r = \Yii::$app->request;
+        $shopid = $r->get('id');
+        $s = $r->get('shu');
+        //查询购买物品数据
+        $mod = new ShopcarDB();
+        $rst = $mod::findOne(['id'=>$shopid]);
+        if ($rst){
+            $mods = new ShopDB();
+            $rst = $mods::findOne(['id'=>$rst->attributes['sid']]);
+            return $this->render('shoped',['data'=>$rst->attributes,'shu'=>$s]);
+        }
+    }
+
+    //在购物车批量购买
+    public function actionCarshops(){
+        $r = \Yii::$app->request;
+        $ss = count($r->post('id'));
+        $data = [];
+        for($i=0 ; $i<$ss ; $i++){
+            $shopid = $r->post('id')[$i];
+            $s = $r->post('shul')[$i];
+            //查询购买物品数据
+            $mod = new ShopcarDB();
+            $rst = $mod::findOne(['id'=>$shopid]);
+            if ($rst){
+                $mods = new ShopDB();
+                $rst = $mods::findOne(['id'=>$rst->attributes['sid']]);
+                $data[$i] = $rst->attributes;
+                $data[$i]['shu'] = $s;
+            }
+        }
+        return $this->render('shopeds',['data'=>$data]);
     }
     //确认购买
     public function actionShoped(){

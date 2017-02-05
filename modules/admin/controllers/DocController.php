@@ -13,8 +13,14 @@ class DocController extends Controller{
     }
     //删除账号
     public function actionDeldoc(){
-        $mod = new docDB();
+        $mod = new DocDB();
         $s = \Yii::$app->request->post('ids');
         $mod ->deldoc($s);
+    }
+    //发货
+    public function actionEditdoc(){
+        $mod = new DocDB();
+        $data = \Yii::$app->request->post();
+        $mod ->fahuo($data);
     }
 }

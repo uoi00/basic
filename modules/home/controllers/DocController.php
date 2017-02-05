@@ -20,10 +20,46 @@ class DocController extends OverController
     }
     //确认购买 生成订单
     public function actionShop(){
+        $r = \Yii::$app->request;
+        if ($r->post('addrs') && $r->post('names') && $r->post('tels')){
+            $mod = new DocDB();
+            $rst = $mod->adddoc($r->post());
+            if ($rst != null ){
+                return $this->render('doc',['data'=>$rst]);
+            }else{
+                return $this->render('doc',['data'=>null]);
+            }
+        }else{
+            return $this->render('doc',['data'=>null]);
+        }
+
+    }
+    //批量确认购买 生成订单
+    public function actionShops(){
         $mod = new DocDB();
-        $rst = $mod->adddoc(\Yii::$app->request->post());
-        if ($rst != null ){
-            return $this->render('doc',['data'=>$rst]);
+        $r = \Yii::$app->request;
+        if ($r->post('addrs') && $r->post('names') && $r->post('tels')){
+            $data['addrs'] = $r->post('addrs');
+            $data['names'] = $r->post('names');
+            $data['tels'] = $r->post('tels');
+            $data['user'] = '';
+            $data['shuls'] = '';
+            $data['money'] = 0;
+            foreach ($r->post('user') as $item) {
+                $data['user'] .= $item .',';
+            }
+            foreach ($r->post('shuls') as $item) {
+                $data['shuls'] .= $item .',';
+            }
+            foreach ($r->post('money') as $item) {
+                $data['money'] += $item;
+            }
+            $rst = $mod->adddoc($data);
+            if ($rst != null ){
+                return $this->render('doc',['data'=>$rst]);
+            }else{
+                return $this->render('doc',['data'=>null]);
+            }
         }else{
             return $this->render('doc',['data'=>null]);
         }
@@ -42,4 +78,14 @@ class DocController extends OverController
         $mod = new DocDB();
         $mod->deldoc(\Yii::$app->request->post('id'));
     }
+    //收货
+    public function actionShouhuo(){
+        $mod = new DocDB();
+        if ($mod->shouhuo(\Yii::$app->request->post('data'))){
+            echo 'true';
+        }else{
+            echo 'false';
+        }
+    }
+
 }

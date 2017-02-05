@@ -90,7 +90,6 @@ AppAsset::register($this);
     });
     //倒计时按钮
     function btn_time(btn) {
-        console.log(btn);
         var count = 30;
         var countdown = setInterval(CountDown, 1000);
         function CountDown() {

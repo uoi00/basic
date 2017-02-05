@@ -35,8 +35,10 @@ function delcar(id) {
         }
     });
 }
-function carshoping(id,su) {
-    open("./index.php?r=home/index/shoped&id="+id+"&shu="+su);
+function carshoping(ss) {
+    var sp   = ss.parentNode.parentNode;
+    var shu1 = sp.childNodes[2].firstChild.childNodes[1].value;
+    open("./index.php?r=home/index/carshop&id="+ss.getAttribute('class')+"&shu="+shu1);
 }
 function looks(ids) {
     $.post('./index.php?r=home/index/shops',{id:ids});
